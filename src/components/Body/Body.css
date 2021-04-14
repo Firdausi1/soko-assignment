@@ -64,8 +64,7 @@
     font-weight: 700;
 }
 
-@media screen and (max-width: 425px){
-    
+@media screen and (max-width: 768px){
     .body__searchBar{
         border-radius: 5px;
         top: -20px;
@@ -102,7 +101,7 @@
         flex-direction: column;
     }
     .body__categories h3{
-        font-size: 12px;
+        font-size: 15px;
     }
     .categories{
         height: 100px;
@@ -112,7 +111,7 @@
         margin-top: 20px;
         font-style: italic;
         font-weight: 200;
-        font-size: 12px;
+        font-size: 15px;
     }
     .sellers{
         display: flex;
@@ -121,9 +120,22 @@
     }
     .sellers__link{
         color: rgb(39, 102, 204);
-        font-size: 12px;
+        font-size: 15px;
         text-decoration: underline;
         cursor: pointer;
         font-weight: 700;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+    .body__categories h3{
+        font-size: 12px;
+    }
+    .categories p{
+        font-size: 12px;
+    }
+    .sellers__link{
+        font-size: 12px;
     }
 }

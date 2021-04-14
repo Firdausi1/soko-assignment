@@ -2,6 +2,7 @@
     padding-left: 3%;
     padding-top: 5%;
     overflow-y: scroll;
+    width: 30%;
 }
 
 .checkout h2{
@@ -13,8 +14,6 @@
     display: flex;
     justify-content: space-between;
 }
-
-
 
 .checkout__bag h2{
     font-weight: 700;
@@ -81,24 +80,31 @@
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 425px){
-	.checkout__btn{
+@media screen and (max-width: 768px){
+    .checkout{
+        width: 100%;
+    }
+    .checkout__btn{
         width: 100%;
         border-radius: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
     }
     .checkout__bag{
         border-bottom: 1px solid #d0d0d0;
         margin-bottom: 10px;
     }
+    .checkout__itemDetail h3{
+        font-weight: 700;
+    }
+}
+@media screen and (max-width: 425px){
+	.checkout__btn{
+        font-size: 15px;
+    }
     .checkout__item{
         padding-bottom: 10px;
         font-size: 12px;
-    }
-    .checkout__itemDetail h3{
-        font-weight: 700;
     }
 }

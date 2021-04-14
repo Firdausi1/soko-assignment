@@ -3,7 +3,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    /* min-height: 80vh; */
+    min-height: 80vh;
     padding-top: 20px;
 }
 
@@ -32,13 +32,15 @@
     height: 40vh;
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 768px){
     .productDetail{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: fit-content;
         padding-top: 0;
+        overflow-y: scroll;
+        padding-bottom: 20px;
     }
     .productDetail img{
         width: 100%;
@@ -48,6 +50,10 @@
         width: 100%;
         padding-top: 10px;
     }
+}
+
+@media screen and (max-width: 425px){
+    
     .productDetail__text p{
         font-size: 12px;
     }

@@ -84,7 +84,7 @@
     margin-right: 0;
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 768px){
     .header{
         min-height: 10vh;
     }
@@ -97,14 +97,18 @@
     .header__bottomRight{
         display: none;
     }
+    .header{
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 425px){
+
     .header__bottomLeft p{
         font-size: 12px;
     }
     
     .header__bottomLeft h2{
         font-size: 18px;
-    }
-    .header{
-        border-bottom: none;
     }
 }
