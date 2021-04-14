@@ -1,0 +1,80 @@
+.account {
+	width: 70%;
+	padding-top: 5%;
+	border-right: 1px solid #d0d0d0;
+	padding-right: 20px;
+}
+
+.account h3 {
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+.account p {
+	margin-top: 0;
+}
+
+.account__detail {
+	display: flex;
+	margin-bottom: 10%;
+}
+
+.account__list {
+	align-self: flex-start;
+    border-radius: 50%;
+    width: 20px;
+	border: 1px solid black;
+	padding: 10px;
+    margin-right: 10%;
+    display: block;
+    text-align: center;
+}
+
+.account__number {
+	display: flex;
+}
+
+.account__numberInput {
+	display: flex;
+    flex-direction: column;
+}
+
+.account__numberInput label {
+	margin-bottom: 5%;
+}
+
+.account__btn {
+	align-self: flex-end;
+    height: 30px;
+    margin-left: 10%;
+    width: 20%;
+}
+
+.PhoneInput {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    border-radius: 5%;
+}
+
+.PhoneInputCountry {
+	display: flex;
+}
+
+.PhoneInputCountry select {
+	width: 50px;
+	border: none;
+}
+
+.PhoneInputInput {
+    border: none;
+    width: 200px;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 425px){
+	.account{
+		display: none;
+	}
+}

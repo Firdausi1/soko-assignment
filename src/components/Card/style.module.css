@@ -1,0 +1,45 @@
+.group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sp_btw {
+  justify-content: space-between;
+}
+
+.item__card {
+  width: 45%;
+  height: 11rem;
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+  border: 1px solid #ccc;
+}
+
+.item__card > div {
+  margin-bottom: 1rem;
+}
+
+.item__img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.group > * {
+  margin-right: 0.3rem;
+}
+
+.bold_text {
+  font-weight: 800;
+}
+
+.item__details > p {
+  font-size: 0.7rem;
+  margin-bottom: 0.23rem;
+}
+
+@media (max-width: 992px) {
+  .item__card {
+    width: 100%;
+  }
+}

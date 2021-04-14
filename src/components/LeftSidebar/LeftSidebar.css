@@ -1,0 +1,43 @@
+.leftSidebar{
+    width: 100%;
+    border-right: 1px solid #d0d0d0;
+    padding-top: 25px;
+    min-height: 80vh;
+}
+
+.leftSidebar__menu{
+    list-style: none;
+    font-size: 20px;
+    padding-left: 0;
+}
+
+.leftSidebar__menu .active{
+    color: rgb(39, 102, 204);
+}
+
+.leftSidebar__menu li a{
+    width: 100%;
+}
+
+.leftSidebar__menu li{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.leftSidebar__link{
+    display: flex;
+    align-items: center;
+}
+
+.leftSidebar__link a{
+    color: rgb(39, 102, 204);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.leftSidebar__link .MuiSvgIcon-root{
+    color: rgb(39, 102, 204);
+    font-size: 16px;
+}

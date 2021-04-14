@@ -1,0 +1,129 @@
+.body{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 80vh;
+    position: relative;
+}
+.body__searchBar{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #f0f0f0;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    top: -30px;
+    width: 50%;
+    height: 8%;
+    left: 24%;
+}
+
+.body__details {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 50%;
+	padding-top: 25px;
+}
+
+.body__searchBar input{
+    background-color: #f0f0f0;
+    border: none;
+    padding-left: 20px;
+}
+
+.body__searchBar-icon{
+    display: flex;
+    background-color: #f8de4b;
+    height: 100%;
+    width: 10%;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    justify-content: center;
+}
+
+.body__searchBar-icon .MuiSvgIcon-root, button .MuiSvgIcon-root{
+    color: rgb(39, 102, 204);
+}
+.body .leftsidebar{
+    width: 20%;
+}
+
+.body .rightsidebar{
+    width: 20%;
+}
+
+.body__categories{
+    display: none;
+}
+
+.center h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 425px){
+    
+    .body__searchBar{
+        border-radius: 5px;
+        top: -20px;
+        width: 100%;
+        height: 6%;
+        left:0;
+    }
+    .body__searchBar-icon{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .leftsidebar, .rightsidebar{
+        display: none;
+    }
+    .center{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .body__details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .body__details h2{
+        display: none;
+    }
+    .body__categories{
+        display: flex;
+        flex-direction: column;
+    }
+    .body__categories h3{
+        font-size: 12px;
+    }
+    .categories{
+        height: 100px;
+    }
+    .categories p{
+        text-align: center;
+        margin-top: 20px;
+        font-style: italic;
+        font-weight: 200;
+        font-size: 12px;
+    }
+    .sellers{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sellers__link{
+        color: rgb(39, 102, 204);
+        font-size: 12px;
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: 700;
+    }
+}

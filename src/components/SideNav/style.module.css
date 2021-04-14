@@ -1,0 +1,45 @@
+.clear {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.icon {
+  font-size: 1.2rem;
+}
+
+.icon__text {
+  vertical-align: middle;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  /* add recommended styling here */
+  /* background-color: beige; */
+}
+
+.group > * {
+  margin-right: 0.7rem;
+}
+
+@media (max-width: 992px) {
+  .nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .nav > * {
+    margin-right: 1rem;
+  }
+}
